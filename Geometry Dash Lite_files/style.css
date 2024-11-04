@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'HumanBBYWeb';
+  src: url('https://cdn.flashtalking.com/176968/HumanaBBY_2024_fontsRL/HumanBBY-55Regular-Web.woff2') format('woff2'),
+  url('https://cdn.flashtalking.com/176968/HumanaBBY_2024_fontsRL/HumanBBY-55Regular-Web.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HumanBBYWeb';
+  src: url('https://cdn.flashtalking.com/176968/HumanaBBY_2024_fontsRL/HumanBBY-75Bold-Web.woff2') format('woff2'),
+  url('https://cdn.flashtalking.com/176968/HumanaBBY_2024_fontsRL/HumanBBY-75Bold-Web.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'HumanBBYWeb';
+  src: url('https://cdn.flashtalking.com/176968/HumanaBBY_2024_fontsRL/HumanBBY-Web-65-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: medium;
+}
+
+body {
+margin: 0px;
+padding: 0px;
+font-family: "HumanBBYWeb", Arial, Helvetica, "Nimbus Sans L",
+  "Liberation Sans", FreeSans, sans-serif;
+font-size: 13px;
+font-style: normal;
+color: #000;
+}
+
+.frameSize {
+position: absolute;
+width: 300px;
+height: 250px;
+left: 0px;
+top: 0px;
+}
+
+#bb_logo {z-index: 50;transform-origin: right center;}
+
+#bg {
+z-index: 11;
+}
+
+.abso {
+position: absolute;
+display: block;
+top: 0px;
+}
+
+#openingFrame {
+display: block;
+z-index: 10;
+}
+
+#container {
+position: absolute;
+display: block;
+background-color: #fff;
+width: 300px;
+height: 250px;
+overflow: hidden;
+border: 1px solid #e8e8e8;
+box-sizing: border-box;
+opacity: 0;
+}
+
+sup {
+vertical-align: super;
+font-size: 0.6em;
+letter-spacing: -0.5px;
+}
+
+#border {
+position: absolute;
+display: block;
+width: 298px;
+height: 248px;
+border: solid 1px black;
+pointer-events: none;
+}
+
+#non_splash_hold {
+position: absolute;
+display: block;
+background-color: #fff;
+width: 300px;
+height: 250px;
+}
+
+#carousel {
+position: absolute;
+display: block;
+width: 270px;
+height: 126px;
+left: -300px;
+top: 51px;
+overflow: hidden;
+z-index: 12;
+}
+
+.prod {
+position: absolute;
+display: block;
+width: 270px;
+height: 126px;
+overflow: hidden;
+left: 300px;
+top: 0px;
+}
+
+.prod_img_hold {
+position: relative;
+/* width: 98px; */
+width: 85px;
+height: 116px;
+margin-top: 4px;
+margin-bottom: 4px;
+margin-left: 7px;
+}
+
+.prod_img_hold_big {
+position: relative;
+width: 152px;
+height: 152px;
+margin-top: 7px;
+margin-bottom: 20px;
+}
+
+.prod_img_hold img,
+.prod_img_hold_big img {
+max-height: 90%;
+max-width: 90%;
+width: auto;
+height: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+.prod_img {
+display: block;
+align-self: center;
+}
+
+.prod_info {position: absolute;display: block;width: 167px;height: 70px;left: 97px;top: 17px;}
+
+.prod_desc {
+  position: absolute;
+  display: -webkit-box;
+  left: 1px;
+  top: 29px;
+  width: 100%;
+  font-family: "HumanBBYWeb", Arial, Helvetica, "Nimbus Sans L",
+  "Liberation Sans", FreeSans, sans-serif;
+  /* color: #0d4ca7; */
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.15em;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+
+
+
+.prod_price {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0px;
+  width: 140px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "HumanBBYWeb", Arial, Helvetica, "Nimbus Sans L",
+  "Liberation Sans", FreeSans, sans-serif;
+  color: #000;
+  /* line-height: 0.2em; */
+  /* letter-spacing: -0.3px; */
+  }
+
+.prod_logo {
+position: absolute;
+display: block;
+opacity: 0;
+width: 300px;
+width: 100%;
+height: auto;
+z-index: 12;
+left: 31px; 
+top:145px;
+left: 0;
+top: 0;
+}
+.p_logo_cont {
+position: absolute;
+display: block;
+opacity: 0;
+width: 300px;
+width: 100%;
+height: auto;
+z-index: 12;
+left: 31px; 
+top:145px;
+left: 0;
+top: 0;
+}
+
+
+
+.prod_btn {
+position: absolute;
+display: block;
+width: 300px;
+height: 150px;
+left: 0px;
+top: 0px;
+background-color: cornflowerblue;
+opacity: 0;
+}
+
+.arrow {
+position: absolute;  display: none;
+opacity: 0;  z-index: 100;
+top: 110px;
+width: 20px;
+}
+
+#arrow_left {left: 6px;}
+
+#arrow_right {
+left: 280px;
+rotate: 180deg;
+}
+
+#whiteBlock {
+position: absolute;
+display: none;
+left: 0px;
+top: 0px;
+background-color: #fff;
+width: 300px;
+height: 250px;
+}
+
+#cta_hold {
+position: absolute;
+display: block;
+/* opacity: 0; */
+width: 300px;
+height: 30px;
+top: 139px;
+z-index: 12;
+}
+
+#cta_bg {
+position: absolute;
+width: 78px;
+height: 30px;
+/* border-radius: 2px; */
+left: 110px;
+background-color: #fff200
+}
+
+#cta_copy {
+color: rgb(0, 0, 0);
+font-size: 12px;
+letter-spacing: -.01em;
+position: absolute;
+text-align: center;
+pointer-events: none;
+font-weight: 600;
+}
+
+#footer_btn {
+position: absolute;
+display: block;
+width: 300px;
+height: 100px;
+left: 0px;
+top: 150px;
+background-color: cornflowerblue;
+opacity: 0;
+}
+
+#legal_txt {
+position: absolute;
+top: 239px;
+left: 2px;
+font-size: 7.5px;
+color: #fff200;
+width: 200px;
+z-index: 13;
+font-weight: normal;
+}
+
+.irc {
+font-size: 12px;
+line-height: 10px;
+}
+
+.dollarSign {
+margin-left: 3px;
+}
+
+#default_img {
+position: absolute;
+display: none;
+left: 0px;
+width: 300px;
+height: 250px;
+z-index: 12;
+}
+
+#non_splash {
+position: absolute;
+display: block;
+left: 0px;
+}
+#upperBorder,#footer_hold {  z-index: 10;}
+/* #footer_hold {opacity: 0;} */
+
+#upperBorder {
+position: absolute;
+width: 300px;
+height: 0px;
+top: 125px;
+left: 0px;
+background: #fff;
+border: none;
+}
+
+#footer_bg {
+position: absolute;
+width: 300px;
+left: 0px; 
+top: 0px;
+/* top: 300px; */
+opacity: 0;
+}
+
+#vpe_hold {
+position: absolute;
+width: 300px;
+left: 0px; 
+top: 0px;
+/* top: 300px; */
+opacity: 0;
+}
+
+.logoTag {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: auto;
+}
+
+#logoContainer {
+  position: absolute;
+  width: 153px; height: auto;
+  left: 63px; top: 80px;
+  z-index: 12;
+}
+
+/* #f1Fold {
+  z-index: 12;
+} */
+
+#tagFlat {opacity: 0;}
+#tagBottom {transform-origin: top right;}
+
+#imagineThat{
+opacity: 0;
+transform: translateY(-3px);
+z-index: 15;
+}
