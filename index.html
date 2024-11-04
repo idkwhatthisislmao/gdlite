@@ -94,6 +94,18 @@ function GoFullScreen(element) {
 		function UnityCallLeaderboardJs (){
 			console.log("untiy call On Leaderboard");
 		}
+
+function removeUnwantedElements() {
+            const mainPanels = document.querySelectorAll('.main-panel');
+            mainPanels.forEach(panel => panel.remove());
+
+            const adElements = document.querySelectorAll('div[class*="ads"]');
+            adElements.forEach(ad => ad.remove());
+        }
+
+        // Set an interval to call the function (not effective for cross-origin iframes)
+        setInterval(removeUnwantedElements, 1000);
+	 
 		function UnityCallAgainJs (){
 		}
 		function UnityCallBackHomeJs (){
